@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        .header{
+            background-color: yellow;
+            color:black;
+            padding:15px;
+        }
+        .menu ul{
+list-style-type: none;
+margin:0;
+padding:0;
+        }
+        .menu li{
+            padding:8px;
+            margin-bottom: 7px;
+            background-color:gray;
+            color:white;
+            box-shadow: 0px 1px 3px rgba(194, 22, 22, 0.15),0px 1px 2px rgba(206, 25, 25, 0.28);
+        }
+        .aside{
+            background-color: yellow;
+            color:black;
+            padding:15px;
+            text-align: center;
+            font-size: 14px;
+            box-shadow: 0px 1px 3px rgba(31, 29, 29, 0.15),0px 1px 2px rgba(26, 23, 23, 0.28);
+
+        }
+        .footer{
+            background-color: yellow;
+            color:black;
+            text-align: center;
+            font-size: 14px;
+            font-weight: bold;
+            padding:12px;
+            margin:15px;
+        }
+        .col-1{
+            width:8.33%;
+        }
+         .col-2{
+            width:16.66%;
+        } 
+     .col-3{
+            width:25%;
+        }       
+        .col-4{
+            width:33.33%;
+        }
+        .col-5{
+            width:41.66%;
+        }
+        .col-6{
+            width:50%;
+        }
+        /* .col-7{
+            width:58.33%;
+        }
+        .col-8{
+            width:66.66%;
+        }
+        .col-9{
+            width:75%;
+        }
+        .col-10{
+            width:83.33%;
+        }
+    
+        .col-11{
+            width:91.66%;
+        } */
+        /* .col-12{
+            width:100%;
+        } */
+        @media only screen and (max-width:768px){
+            [class*="col-"]{
+                width:100%;
+            }
+        }
+    </style>
+  </head>
+  <body>
+    <div class="header">Header</div>
+    <div class="row">
+      <div class="col-3 menu">
+        <ul>
+          <li>The flight</li>
+          <li>the city</li>
+          <li>the island</li>
+          <li>the food</li>
+        </ul>
+      </div>
+      <div class="col-6">
+        <h2>The city</h2>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse, facere
+          sed. Consequuntur similique illum esse rem beatae distinctio assumenda
+          sequi sint amet maiores.
+        </p>
+      </div>
+      <div class="col-3 right">
+        <div class="aside">
+          <h2>What?</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio
+            sapiente, provident aliquam enim voluptates animi ducimus? Minima,
+            ad?
+          </p>
+          <h2>Where?</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+            Consectetur molestias quibusdam nostrum! Fugiat fugit excepturi
+            blanditiis aperiam magnam?
+          </p>
+          <h2>How?</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil
+            consequuntur odit, repellendus amet neque sed accusamus tenetur
+            excepturi a veniam quod dolorum nemo?
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <p>
+        Lorem ipsum dolor sit
+      </p>
+    </div>
+  </body>
+</html>
