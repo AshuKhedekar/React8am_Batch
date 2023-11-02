@@ -1,0 +1,45 @@
+<style>
+    .myForm{
+        display:grid;
+        grid-template-columns: [labels] auto [controls] 1fr;
+        grid-auto-flow:row;
+        grid-gap: .8em;
+        background-color: rgb(185, 183, 183);
+        padding:1.2em;
+    }
+    .myForm > label{
+        grid-column: labels;
+        grid-row:auto;
+    }
+    .myForm > input,
+    .myForm > textarea
+    
+    {
+        grid-column:controls;
+        grid-row: auto;
+        border:none;
+        padding:1em;
+       
+        }
+      
+        .myForm > button{
+            grid-column:controls;
+        grid-row: auto;
+        border:none;
+        padding:1em;
+        background-color: rgb(185, 183, 183);
+        }   
+       
+        
+</style>
+<h2 style="text-align: center;">Register Form </h2>
+<form class="myForm">
+    <label for="customer_name">Name</label>
+    <input name="customer_name" id="customer_name" required/>
+    <label for="customer_email">Email</label>
+    <input name="customer_email" id="customer_email" />
+    <label for="comments">Comments</label>
+    <textarea name="comments" id="comments" maxlength="500"></textarea>
+    <button>Submit</button>
+</form>
+

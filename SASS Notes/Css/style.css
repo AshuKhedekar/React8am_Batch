@@ -1,0 +1,29 @@
+div {
+  background: #fff;
+}
+
+nav ul {
+  margin: 0;
+  list-style: none;
+  text-align: end;
+  background-color: #f8bbd0;
+}
+nav li {
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 12px;
+  display: inline-block;
+}
+nav a {
+  display: block;
+  border: 2px solid blue;
+  padding: 6px 20px;
+  text-decoration: none;
+}
+
+.button {
+  background-color: #750c30;
+  border: 1px solid #f5ebfc;
+  border-radius: 3px;
+}/*# sourceMappingURL=style.css.map */
